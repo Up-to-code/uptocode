@@ -8,7 +8,7 @@ interface CommentProps {
 
 const Comment: React.FC<CommentProps> = ({ id, name, comment }) => {
   return (
-    <div className="card bg-base-100 shadow-xl  my-5">
+    <div className="card bg-base-100 shadow-md  my-5">
       <div className="card-body">
         <Image
           src={`https://i.pravatar.cc/150?u=${id}`}

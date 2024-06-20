@@ -83,7 +83,7 @@ const Contacte = () => {
         </div>
 
         <button
-          className="btn btn-success"
+          className="btn btn-primary"
           type="submit"
           onClick={(e) => handleSubmit(e)}
         >

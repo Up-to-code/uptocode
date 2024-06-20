@@ -17,8 +17,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-theme="night">
-      <body className={inter.className + " bg-base-200"}>
+    <html lang="en" data-theme="mytheme">
+      <body className={inter.className + " bg-base-100"}>
         <NavBar />
         <main className="min-h-screen max-w-5xl m-auto ">{children}</main>
         <Footer />

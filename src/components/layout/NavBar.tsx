@@ -1,10 +1,14 @@
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export default function NavBar() {
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-base-100 max-w-5xl m-auto">
       <div className="flex-1">
-        <a className="  text-xl">daisyUI</a>
+        <Link href={"/"} className="max-h-14 " >
+        <Image src="/logo-no-background.svg" alt="logo" width={150} height={50} ></Image>
+        </Link>
       </div>
       <div className="flex-none">
         <ul className="menu menu-horizontal px-1">

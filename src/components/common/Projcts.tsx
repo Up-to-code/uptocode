@@ -53,8 +53,7 @@ interface ProjctCardProps {
 
 const Projct = ({ title, image, url }: ProjctCardProps) => {
   return (
-    <div className="grid grid-cols-md:grid-cols-3 gap-5 my-10 ">
-      <div className=" bg-base-100 shadow-xl   ">
+      <div className=" bg-base-100 shadow-md border  my-10 ">
         <div className="card-body">
           <Image src={image} alt={title} width={200} height={200} />
           <h2 className="card-title mt-4">{title}</h2>
@@ -66,6 +65,5 @@ const Projct = ({ title, image, url }: ProjctCardProps) => {
           </div>
         </div>
       </div>
-    </div>
   );
 };

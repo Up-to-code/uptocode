@@ -18,9 +18,9 @@ const PlansData = [
 ];
 const Plans = () => {
   return (
-    <div className="flex flex-col justify-center items-center h-screen">
+    <div className="flex flex-col justify-center  h-screen ">
       <h1 className="text-3xl font-bold text-center">Plans</h1>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-5 my-10">
+      <div className=" flex justify-around  gap-5 my-14">
         {PlansData.map((plan) => (
           <Plan key={plan.title} {...plan} />
         ))}
@@ -39,8 +39,8 @@ type PlanProps = {
 
 const Plan = ({ title, price, futires }: PlanProps) => {
   return (
-    <div className="bg-base-100 shadow-xl rounded p-4 md:p-6 flex flex-col gap-5 mx-5">
-      <h1 className="text-3xl font-bold text-start">{title}</h1>
+    <div className="bg-base-100 shadow-md rounded p-4 md:p-6 flex flex-col gap-5 mx-5 px-10 border  flex-1">
+      <h1 className="text-3xl font-bold text-start w-28 ">{title}</h1>
 
       <p className="text font-bold">${price}</p>
       <div>
