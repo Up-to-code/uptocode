@@ -1,12 +1,12 @@
 import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
 
-const isProtectedRoute = createRouteMatcher(["/admin(.*)", "/forum(.*)"]);
+const isProtectedRoute = createRouteMatcher(["/admin(.*)"]);
 
 export default clerkMiddleware(
   (auth, req) => {
-    if (isProtectedRoute(req))
+    if (isProtectedRoute(req) && !auth())
       auth().redirectToSignIn({
-        returnBackUrl: "/admin",
+        returnBackUrl: req.url,
       });
   },
   {
