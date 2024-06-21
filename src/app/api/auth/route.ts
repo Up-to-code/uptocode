@@ -2,7 +2,7 @@ import { getAuth } from "@clerk/nextjs/server";
 import { NextRequest, NextResponse } from "next/server";
 
 
-export async function POST(req: NextRequest, res: NextRequest) {
+export async function POST(req: NextRequest, res: NextResponse) {
   const { userId } = getAuth(req);
   if (!userId) {
     console.log("Unauthorized");
