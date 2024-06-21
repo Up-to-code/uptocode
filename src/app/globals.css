@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+.cl-button{
+transform: scale(1.2);
+}
 ::selection {
   background: black;
   color: white;
