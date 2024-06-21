@@ -6,7 +6,7 @@ export default clerkMiddleware(
   (auth, req) => {
     if (isProtectedRoute(req))
       auth().redirectToSignIn({
-        returnBackUrl: "/",
+        returnBackUrl: "/admin",
       });
   },
   {
